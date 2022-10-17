@@ -1,7 +1,17 @@
 {
-    "header": "การรวม Project บน Angular",
+    "header": "Create multi-app Angular in one project",
     "content": [
-        "<b>TEST</b> ใน Angular เราสามารถรวม Project ต่างๆ ให้อยู่ Project เดียวกันได้ ",
-        "<p>การที่จะรวม project ใน Angular ได้ เราต้องทำการ Setup ไว้ตั้งแต่ครั้งแรก"
+        "In Angular CLI version 6 or later, we can create multiple applications in a single project or workspace.",
+        "It is suitable for an enterprise. You can use a single repository and configuration for all Angular projects.",
+        "<h3>Advantages</h3>",
+        "<ul>",
+        "   <li>You can share library and configuration for all projects",
+        "   <li>You will be got shared  a node_modules folder, you don't need to run npm for each project</li>",
+        "   <li>A single git repository</li>",
+        "</ul>",
+        "<h3>Setting up</h3>",
+        "<div class=\"text-center article-code\">",
+        "   <code>ng new project-name --create-application false</code>",
+        "</div>"
     ]
 }
