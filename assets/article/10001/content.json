@@ -1,0 +1,7 @@
+{
+    "header": "การรวม Project บน Angular",
+    "content": [
+        "<b>TEST</b> ใน Angular เราสามารถรวม Project ต่างๆ ให้อยู่ Project เดียวกันได้ ",
+        "<p>การที่จะรวม project ใน Angular ได้ เราต้องทำการ Setup ไว้ตั้งแต่ครั้งแรก"
+    ]
+}
