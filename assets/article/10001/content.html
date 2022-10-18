@@ -8,8 +8,8 @@ It is suitable for an enterprise that use a single repository and configuration 
     <li>We can handle with a single git repository</li>
 </ul>
 
-<h3>Let start</h3>
-First, let’s start by defining what is an Angular Workspace:
+<h3>Let's started</h3>
+Create a new Angular project with no application by using --create-appliction false option. This project is called a workspace.
 
 <p>
 <div class="article-code">
@@ -17,12 +17,13 @@ First, let’s start by defining what is an Angular Workspace:
 </div>
 
 <p>
-And then, change the directory to workspace folder and generate app1 and app2 applications in this workspace.
-It will create an application file structure in the workspace/projects folder.
+And then, change the directory to workspace folder and generate main-app as main-application and app1 and app2 as sub-application.
+All application file structures were created in the workspace/projects folder.
 <p>
 <div class="article-code">
     <code>
         cd workspace<br>
+        ng g application main-app --routing<br>
         ng g application app1 --routing<br>
         ng g application app2 --routing
     </code>
@@ -30,6 +31,16 @@ It will create an application file structure in the workspace/projects folder.
 
 <p>
 Run the applicaiton
+
+<p>
+<div class="article-code">
+    <code>
+        ng serve --project main-app<br>
+    </code>
+</div>
+
+<p>
+Or
 
 <p>
 <div class="article-code">
@@ -49,5 +60,5 @@ Or
 </div>
 
 <p>
-You can run app1 or app2 but can not run both simultaneously because all applications use the same port.
-If you want to combine app1 and app2 together. You have to inject sub-appliction (app2) to main-application (app1).
+You can run main-app, app1 or app2 but can not run all simultaneously because all applications use the same port.
+If you want to combine main-app, app1 and app2 together. You have to inject sub-applications (app1 and app2) to main-application (main-app).
